@@ -1,3 +1,15 @@
+<header class="header">
+  <div class="logo">TRUE DENTISTRY</div>
+
+  <nav class="nav">
+    <a href="#services">Послуги</a>
+    <a href="#about">Про нас</a>
+    <a href="#doctor">Лікар</a>
+    <a href="#contacts">Контакти</a>
+  </nav>
+
+  <a class="call-btn" href="tel:+380978888528">📞 Зателефонувати</a>
+</header>
 # true-dentistry
 index.html
 <!DOCTYPE html><html lang="uk">
@@ -18,7 +30,81 @@ index.html
       padding: 0;
       font-family: Arial, Helvetica, sans-serif;
     }
+body {
+  margin: 0;
+  background: #0A0F1A; /* темний преміум фон */
+  font-family: 'Arial', sans-serif;
+  color: #ffffff;
+}
 
+/* Хедер */
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background: #0A0F1A;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 22px;
+  letter-spacing: 2px;
+  color: #E2C28F; /* золото */
+  font-weight: bold;
+}
+
+/* Навігація */
+.nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 18px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: #E2C28F; /* золото */
+}
+
+/* Кнопка дзвінка */
+.call-btn {
+  background: #E2C28F; /* золота кнопка */
+  color: #0A0F1A;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.call-btn:hover {
+  background: #c9a86c;
+}
+
+/* Мобільна адаптація */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .header {
+    padding: 14px 20px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .call-btn {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+}
     body {
       background: var(--light);
       color: var(--dark);
