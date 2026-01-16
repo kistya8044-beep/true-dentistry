@@ -1,297 +1,284 @@
-<header class="header">
-  <div class="logo">TRUE DENTISTRY</div>
-
-  <nav class="nav">
-    <a href="#services">Послуги</a>
-    <a href="#about">Про нас</a>
-    <a href="#doctor">Лікар</a>
-    <a href="#contacts">Контакти</a>
-  </nav>
-
-  <a class="call-btn" href="tel:+380978888528">📞 Зателефонувати</a>
-</header>
-# true-dentistry
-index.html
-<!DOCTYPE html><html lang="uk">
+<!DOCTYPE html>
+<html lang="uk">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>True Dentistry — Стоматологія в Києві</title>
-  <meta name="description" content="Сучасна стоматологія True Dentistry у Києві. Професійне лікування зубів, турбота та комфорт. Запис за телефоном +380978888528" />  <style>
-    :root {
-      --primary: #1fa4a9;
-      --dark: #1c2b2e;
-      --light: #f7fbfc;
-    }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>True Dentistry — Преміальна стоматологія в Києві</title>
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-body {
-  margin: 0;
-  background: #0A0F1A; /* темний преміум фон */
-  font-family: 'Arial', sans-serif;
-  color: #ffffff;
-}
-
-/* Хедер */
-.header {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 18px 40px;
-  background: #0A0F1A;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.logo {
-  font-size: 22px;
-  letter-spacing: 2px;
-  color: #E2C28F; /* золото */
-  font-weight: bold;
-}
-
-/* Навігація */
-.nav a {
-  color: #ffffff;
-  text-decoration: none;
-  margin: 0 18px;
-  font-size: 16px;
-  transition: 0.3s;
-}
-
-.nav a:hover {
-  color: #E2C28F; /* золото */
-}
-
-/* Кнопка дзвінка */
-.call-btn {
-  background: #E2C28F; /* золота кнопка */
-  color: #0A0F1A;
-  padding: 12px 20px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.call-btn:hover {
-  background: #c9a86c;
-}
-
-/* Мобільна адаптація */
-@media (max-width: 768px) {
-  .nav {
-    display: none;
-  }
-
-  .header {
-    padding: 14px 20px;
-  }
-
-  .logo {
-    font-size: 18px;
-  }
-
-  .call-btn {
-    padding: 10px 14px;
-    font-size: 14px;
-  }
-}
+  <style>
     body {
-      background: var(--light);
-      color: var(--dark);
+      margin: 0;
+      font-family: "Arial", sans-serif;
+      background: #0A0F1A;
+      color: #ffffff;
       line-height: 1.6;
     }
 
-    header {
-      background: white;
-      padding: 20px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    /* ПРЕМІАЛЬНА КОЛІРНА ТЕМА */
+    :root {
+      --gold: #E2C28F;
+      --dark: #0A0F1A;
+      --deep-dark: #050910;
+    }
+
+    /* ХЕДЕР */
+    .header {
+      width: 100%;
+      padding: 20px 40px;
+      background: var(--dark);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       position: sticky;
       top: 0;
-      z-index: 10;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 0 20px;
-    }
-
-    .header-flex {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
+      z-index: 1000;
     }
 
     .logo {
       font-size: 22px;
+      color: var(--gold);
       font-weight: bold;
-      color: var(--primary);
+      letter-spacing: 2px;
     }
 
-    .phone {
-      color: var(--primary);
-      font-weight: bold;
+    .nav a {
+      color: #fff;
       text-decoration: none;
+      margin: 0 18px;
+      font-size: 16px;
+      transition: 0.3s;
     }
 
+    .nav a:hover {
+      color: var(--gold);
+    }
+
+    .call-btn {
+      background: var(--gold);
+      color: var(--dark);
+      padding: 12px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .call-btn:hover {
+      background: #c9a86c;
+    }
+
+    /* HERO */
     .hero {
-      padding: 80px 20px;
-      background: linear-gradient(135deg, #e6f6f7, #ffffff);
+      padding: 120px 20px;
+      text-align: center;
+      background: linear-gradient(180deg, #0A0F1A 0%, #050910 100%);
     }
 
     .hero h1 {
-      font-size: 36px;
+      font-size: 42px;
+      color: var(--gold);
       margin-bottom: 20px;
     }
 
     .hero p {
-      max-width: 600px;
-      margin-bottom: 30px;
-      font-size: 18px;
+      font-size: 20px;
+      max-width: 700px;
+      margin: 0 auto 30px;
+      color: #d6d6d6;
     }
 
-    .btn {
+    .hero .btn {
       display: inline-block;
-      background: var(--primary);
-      color: white;
-      padding: 15px 25px;
+      background: var(--gold);
+      color: var(--dark);
+      padding: 15px 30px;
       border-radius: 30px;
-      text-decoration: none;
       font-weight: bold;
+      text-decoration: none;
+      font-size: 18px;
+      transition: 0.3s;
     }
 
+    .btn:hover {
+      background: #c9a86c;
+    }
+
+    /* СЕКЦІЇ */
     section {
-      padding: 70px 20px;
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: auto;
     }
 
     .section-title {
       text-align: center;
-      font-size: 30px;
-      margin-bottom: 40px;
+      font-size: 32px;
+      margin-bottom: 50px;
+      color: var(--gold);
+      letter-spacing: 1px;
     }
 
+    /* КАРТКИ ПОСЛУГ */
     .services {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 25px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
     }
 
     .card {
-      background: white;
-      padding: 25px;
+      background: var(--deep-dark);
+      padding: 30px;
       border-radius: 16px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
       text-align: center;
+      border: 1px solid rgba(255,255,255,0.05);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: var(--gold);
     }
 
     .card h3 {
+      color: var(--gold);
       margin-bottom: 10px;
-      color: var(--primary);
+      font-size: 20px;
     }
 
-    .about {
-      max-width: 800px;
-      margin: auto;
-      text-align: center;
+    /* ПРО ЛІКАРЯ */
+    .doctor-photo {
+      width: 100%;
+      max-width: 260px;
+      border-radius: 16px;
+      margin-bottom: 20px;
+    }
+
+    /* КОНТАКТИ */
+    .contacts p {
       font-size: 18px;
     }
 
-    .contacts {
-      text-align: center;
-      font-size: 18px;
+    .contacts a {
+      color: var(--gold);
+      font-weight: bold;
+      text-decoration: none;
     }
 
+    /* FOOTER */
     footer {
-      background: #0f1f22;
-      color: white;
-      text-align: center;
+      background: #050910;
       padding: 30px 20px;
+      text-align: center;
+      color: #aaa;
       font-size: 14px;
     }
 
-    @media (max-width: 600px) {
-      .hero h1 {
-        font-size: 28px;
-      }
+    /* МОБІЛЬНА ВЕРСІЯ */
+    @media (max-width: 768px) {
+      .nav { display: none; }
+      .header { padding: 14px 20px; }
+      .hero h1 { font-size: 30px; }
+      .hero p { font-size: 16px; }
     }
-  </style></head>
-<body><header>
-  <div class="container header-flex">
-    <!-- ЗАМІНІТЬ ЦЕЙ ТЕКСТ НА ЛОГОТИП (img), КОЛИ БУДЕ ПОТРІБНО -->
-    <div class="logo">True Dentistry</div>
-    <a class="phone" href="tel:+380978888528">+38 (097) 888-85-28</a>
-  </div>
-</header><section class="hero">
-  <div class="container">
-    <h1>Сучасна стоматологія в Києві</h1>
-    <p>
-      True Dentistry — це турбота, професіоналізм та комфорт.
-      Ми допомагаємо зберегти здорову та красиву усмішку.
-    </p>
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">TRUE DENTISTRY</div>
+
+    <nav class="nav">
+      <a href="#services">Послуги</a>
+      <a href="#about">Про нас</a>
+      <a href="#doctor">Лікар</a>
+      <a href="#contacts">Контакти</a>
+    </nav>
+
+    <a class="call-btn" href="tel:+380978888528">📞 Зателефонувати</a>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Преміальна стоматологія в Києві</h1>
+    <p>Сучасне обладнання, професійні лікарі та комфортне лікування.  
+      True Dentistry — турбота про вашу усмішку.</p>
+
     <a class="btn" href="tel:+380978888528">Записатися на прийом</a>
-  </div>
-</section><section>
-  <div class="container">
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
     <h2 class="section-title">Наші послуги</h2>
+
     <div class="services">
       <div class="card">
         <h3>Терапевтичне лікування</h3>
-        <p>Лікування карієсу та відновлення зубів</p>
+        <p>Лікування карієсу, пломбування та відновлення зубів.</p>
       </div>
+
       <div class="card">
         <h3>Професійна гігієна</h3>
-        <p>Чистка, полірування, профілактика</p>
+        <p>Чистка зубів AirFlow, полірування, профілактика.</p>
       </div>
+
       <div class="card">
         <h3>Ортопедія</h3>
-        <p>Коронки, вініри, протезування</p>
+        <p>Вініри, коронки, протезування з преміальних матеріалів.</p>
       </div>
+
       <div class="card">
         <h3>Імплантація</h3>
-        <p>Сучасні та надійні рішення</p>
+        <p>Надійні імпланти, сучасні технології та комфорт.</p>
       </div>
     </div>
-  </div>
-</section><section style="background:#ffffff">
-  <div class="container">
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
     <h2 class="section-title">Про клініку</h2>
-    <p class="about">
-      Ми працюємо з сучасним обладнанням та матеріалами.
-      Для нас важливі безпека, комфорт і довіра кожного пацієнта.
+    <p style="font-size:19px; text-align:center; color:#d6d6d6; max-width:800px; margin:auto;">
+      Ми працюємо з використанням сучасного обладнання та новітніх технологій.
+      Для нас важливі комфорт, безпека та довіра кожного пацієнта.
     </p>
-  </div>
-</section><section>
-  <div class="container">
-    <h2 class="section-title">Наш лікар</h2>
-    <div class="services" style="align-items:center">
-      <div class="card">
-        <img src="doctor.jpg" alt="Головний лікар Ковальова Ольга Анатоліївна" style="width:100%; max-width:260px; border-radius:16px; margin-bottom:15px" />
-        <h3>Ковальова Ольга Анатоліївна</h3>
-        <p><strong>Головний лікар<br>Ортодонт</strong></p>
-        <p>Професійний підхід, індивідуальні плани лікування та турбота про кожного пацієнта.</p>
-      </div>
+  </section>
+
+  <!-- DOCTOR -->
+  <section id="doctor">
+    <h2 class="section-title">Головний лікар</h2>
+
+    <div style="text-align:center;">
+      <img class="doctor-photo" src="doctor.jpg" alt="Ковальова Ольга Анатоліївна">
+      <h3 style="color:var(--gold); font-size:22px;">Ковальова Ольга Анатоліївна</h3>
+      <p><strong>Ортодонт, головний лікар</strong></p>
+      <p style="max-width:600px; margin:auto; color:#d6d6d6;">
+        Індивідуальний підхід до кожного пацієнта, сучасні методи лікування та увага до деталей.
+      </p>
     </div>
-  </div>
-</section><section>
-  <div class="container">
+  </section>
+
+  <!-- CONTACTS -->
+  <section id="contacts">
     <h2 class="section-title">Контакти</h2>
-    <div class="contacts">
+    <div class="contacts" style="text-align:center;">
       <p><strong>Адреса:</strong> м. Київ, вул. Князів Острозьких 41/8</p>
-      <p><strong>Телефон:</strong> <a class="phone" href="tel:+380978888528">+38 (097) 888-85-28</a></p>
+      <p><strong>Телефон:</strong> <a href="tel:+380978888528">+38 (097) 888-85-28</a></p>
+
+      <br>
+
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.427372054186!2d30.543843!3d50.4264066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfa2f03b1f79%3A0x89dbf707b225f7bf!2sKniaziv%20Ostrozkykh%20St%2C%2041%2F8%2C%20Kyiv!5e0!3m2!1sen!2sua!4v1234567890"
+        width="100%" height="380" style="border:0; border-radius:16px;" allowfullscreen="" loading="lazy">
+      </iframe>
     </div>
-  </div>
-</section><footer>
-  <p>© True Dentistry, Київ</p>
-</footer></body>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © True Dentistry, Київ. Усі права захищено.
+  </footer>
+
+</body>
 </html>
