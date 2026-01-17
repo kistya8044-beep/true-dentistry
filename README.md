@@ -14,7 +14,7 @@
       line-height: 1.6;
     }
 
-    /* ПРЕМІАЛЬНА КОЛІРНА ТЕМА */
+    /* КОЛІРНА ТЕМА */
     :root {
       --gold: #E2C28F;
       --dark: #0A0F1A;
@@ -221,17 +221,17 @@
 
       <div class="card">
         <h3>Професійна гігієна</h3>
-        <p>Чистка зубів AirFlow, полірування, профілактика.</p>
+        <p>AirFlow, полірування, профілактика.</p>
       </div>
 
       <div class="card">
         <h3>Ортопедія</h3>
-        <p>Вініри, коронки, протезування з преміальних матеріалів.</p>
+        <p>Вініри, коронки, протезування преміум-класу.</p>
       </div>
 
       <div class="card">
         <h3>Імплантація</h3>
-        <p>Надійні імпланти, сучасні технології та комфорт.</p>
+        <p>Сучасні імпланти та технології.</p>
       </div>
     </div>
   </section>
@@ -250,9 +250,14 @@
     <h2 class="section-title">Головний лікар</h2>
 
     <div style="text-align:center;">
-      <img class="doctor-photo" src="doctor.jpg" alt="Ковальова Ольга Анатоліївна"
-      <h3 style="color:var(--gold); font-size:22px;">Ковальова Ольга Анатоліївна</h3>
+      <img class="doctor-photo" src="doctor.jpg" alt="Ковальова Ольга Анатоліївна">
+
+      <h3 style="color:var(--gold); font-size:22px;">
+        Ковальова Ольга Анатоліївна
+      </h3>
+
       <p><strong>Ортодонт, головний лікар</strong></p>
+
       <p style="max-width:600px; margin:auto; color:#d6d6d6;">
         Індивідуальний підхід до кожного пацієнта, сучасні методи лікування та увага до деталей.
       </p>
@@ -279,6 +284,9 @@
   <footer>
     © True Dentistry, Київ. Усі права захищено.
   </footer>
+
+</body>
+</html>
 
 </body>
 </html>
