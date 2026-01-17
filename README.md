@@ -5,58 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>True Dentistry — Преміальна стоматологія в Києві</title>
 
-  <meta name="description" content="True Dentistry — преміальна стоматологія в Києві. Сучасне лікування, професійні лікарі, комфорт та турбота.">
-
   <style>
     :root {
       --gold: #E2C28F;
       --dark: #0A0F1A;
       --deep-dark: #050910;
-      --text-light: #d6d6d6;
     }
 
     * {
       box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: Arial, Helvetica, sans-serif;
     }
 
     body {
+      margin: 0;
+      font-family: Arial, sans-serif;
       background: var(--dark);
-      color: #ffffff;
+      color: #fff;
       line-height: 1.6;
     }
 
-    /* ================= HEADER ================= */
+    /* HEADER */
     header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: var(--dark);
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-    }
-
-    .header-container {
-      max-width: 1200px;
-      margin: auto;
-      padding: 16px 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      padding: 16px 24px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      position: sticky;
+      top: 0;
+      background: var(--dark);
+      z-index: 1000;
     }
 
-    .logo img {
-      height: 46px;
-      width: auto;
+    .logo-img {
+      height: 48px;
     }
 
     nav a {
-      color: #ffffff;
+      color: #fff;
       text-decoration: none;
-      margin: 0 16px;
+      margin: 0 12px;
       font-size: 16px;
-      transition: 0.3s;
     }
 
     nav a:hover {
@@ -65,130 +54,73 @@
 
     .call-btn {
       background: var(--gold);
-      color: var(--dark);
-      padding: 12px 20px;
+      color: #000;
+      padding: 10px 16px;
       border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
-      transition: 0.3s;
-      white-space: nowrap;
     }
 
-    .call-btn:hover {
-      background: #c9a86c;
-    }
-
-    /* ================= HERO ================= */
+    /* HERO */
     .hero {
-      padding: 120px 20px;
       text-align: center;
-      background: linear-gradient(180deg, var(--dark), var(--deep-dark));
+      padding: 120px 20px 100px;
     }
 
     .hero h1 {
-      font-size: 42px;
       color: var(--gold);
-      margin-bottom: 20px;
+      font-size: 36px;
+      margin-bottom: 16px;
     }
 
     .hero p {
+      color: #d6d6d6;
+      font-size: 18px;
       max-width: 700px;
       margin: 0 auto 30px;
-      font-size: 20px;
-      color: var(--text-light);
     }
 
     .hero .btn {
-      display: inline-block;
       background: var(--gold);
-      color: var(--dark);
-      padding: 15px 32px;
+      color: #000;
+      padding: 14px 28px;
       border-radius: 30px;
-      font-size: 18px;
-      font-weight: bold;
       text-decoration: none;
-      transition: 0.3s;
+      font-weight: bold;
     }
 
-    .hero .btn:hover {
-      background: #c9a86c;
-    }
-
-    /* ================= SECTIONS ================= */
     section {
+      padding: 80px 20px;
       max-width: 1200px;
       margin: auto;
-      padding: 90px 20px;
     }
 
-    .section-title {
+    h2 {
       text-align: center;
-      font-size: 32px;
-      margin-bottom: 50px;
       color: var(--gold);
+      margin-bottom: 40px;
     }
 
-    /* ================= SERVICES ================= */
+    /* SERVICES */
     .services {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 30px;
+      gap: 24px;
     }
 
     .card {
       background: var(--deep-dark);
-      padding: 30px;
+      padding: 28px;
       border-radius: 16px;
       text-align: center;
-      border: 1px solid rgba(255,255,255,0.06);
-      transition: 0.3s;
     }
 
-    .card:hover {
-      transform: translateY(-6px);
-      border-color: var(--gold);
-    }
-
-    .card h3 {
-      color: var(--gold);
-      margin-bottom: 12px;
-      font-size: 20px;
-    }
-
-    .card p {
-      color: var(--text-light);
-    }
-
-    /* ================= ABOUT ================= */
-    .about-text {
-      max-width: 800px;
-      margin: auto;
-      text-align: center;
-      font-size: 19px;
-      color: var(--text-light);
-    }
-
-    /* ================= DOCTOR ================= */
+    /* DOCTOR */
     .doctor {
       text-align: center;
     }
 
-    .doctor-photo {
-      width: 100%;
-      max-width: 260px;
-      border-radius: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-    }
-
-    .doctor h3 {
-      font-size: 22px;
-      color: var(--gold);
-      margin-bottom: 6px;
-    }
-
-    .doctor p {
-      color: var(--text-light);
+    .doctor img      color: var(--text-light);
       max-width: 600px;
       margin: 10px auto 0;
     }
