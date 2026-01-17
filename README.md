@@ -250,7 +250,7 @@
     <h2 class="section-title">Головний лікар</h2>
 
     <div style="text-align:center;">
-      <img class="doctor-photo" src="doctor.jpg" alt="Ковальова Ольга Анатоліївна">
+      <img class="doctor-photo" src="doctor.jpg" alt="Ковальова Ольга Анатоліївна"
       <h3 style="color:var(--gold); font-size:22px;">Ковальова Ольга Анатоліївна</h3>
       <p><strong>Ортодонт, головний лікар</strong></p>
       <p style="max-width:600px; margin:auto; color:#d6d6d6;">
